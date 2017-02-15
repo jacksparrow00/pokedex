@@ -238,7 +238,9 @@ class PokeApiClient{
                     
                     print("saved photo")
                 }
+                
             })
+            task.resume()
             
             guard let heldItems = data?[PokeApiHeldItemsConstants.heldItems] as? [[String:AnyObject]] else{
                 print("held items key couldn't be found")
