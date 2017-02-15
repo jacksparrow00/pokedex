@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:pokedex/Photo+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:pokedex/Photo+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:pokedex/Types+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:pokedex/Types+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:pokedex/LocationAreaEncounters+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:pokedex/LocationAreaEncounters+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:pokedex/Moves+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:pokedex/Moves+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:pokedex/Abilities+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:pokedex/Abilities+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:pokedex/HeldItems+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:pokedex/HeldItems+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:pokedex/Pokemon+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:pokedex/Pokemon+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:pokedex/Stats+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:pokedex/Stats+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:pokedex.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

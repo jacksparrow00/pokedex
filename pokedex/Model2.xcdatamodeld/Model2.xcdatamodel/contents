@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16C67" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Abilities" representedClassName="Abilities" syncable="YES">
+        <attribute name="ability_name" attributeType="String" syncable="YES"/>
+        <attribute name="is_hidden" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="slot" attributeType="Integer 16" minValueString="0" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="pokemon" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Pokemon" inverseName="ablilities" inverseEntity="Pokemon" syncable="YES"/>
+    </entity>
+    <entity name="HeldItems" representedClassName="HeldItems" syncable="YES">
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="pokemon" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Pokemon" inverseName="heldItems" inverseEntity="Pokemon" syncable="YES"/>
+    </entity>
+    <entity name="LocationAreaEncounters" representedClassName="LocationAreaEncounters" syncable="YES">
+        <attribute name="locationName" attributeType="String" syncable="YES"/>
+        <relationship name="pokemon" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Pokemon" inverseName="locationAreaEncounters" inverseEntity="Pokemon" syncable="YES"/>
+    </entity>
+    <entity name="Moves" representedClassName="Moves" syncable="YES">
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="pokemon" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Pokemon" inverseName="moves" inverseEntity="Pokemon" syncable="YES"/>
+    </entity>
+    <entity name="Photo" representedClassName="Photo" syncable="YES">
+        <attribute name="pic" attributeType="Binary" syncable="YES"/>
+        <attribute name="picUrl" attributeType="String" syncable="YES"/>
+        <relationship name="pokemon" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Pokemon" inverseName="photo" inverseEntity="Pokemon" syncable="YES"/>
+    </entity>
+    <entity name="Pokemon" representedClassName="Pokemon" syncable="YES">
+        <attribute name="baseExperience" attributeType="Integer 16" minValueString="0" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="height" attributeType="Float" minValueString="0" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="id" attributeType="Integer 16" minValueString="0" defaultValueString="0" usesScalarValueType="YES" indexed="YES" syncable="YES"/>
+        <attribute name="isDefault" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="weight" attributeType="Float" minValueString="0" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="ablilities" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Abilities" inverseName="pokemon" inverseEntity="Abilities" syncable="YES"/>
+        <relationship name="heldItems" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="HeldItems" inverseName="pokemon" inverseEntity="HeldItems" syncable="YES"/>
+        <relationship name="locationAreaEncounters" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="LocationAreaEncounters" inverseName="pokemon" inverseEntity="LocationAreaEncounters" syncable="YES"/>
+        <relationship name="moves" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Moves" inverseName="pokemon" inverseEntity="Moves" syncable="YES"/>
+        <relationship name="photo" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Photo" inverseName="pokemon" inverseEntity="Photo" syncable="YES"/>
+        <relationship name="stats" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Stats" inverseName="pokemon" inverseEntity="Stats" syncable="YES"/>
+        <relationship name="types" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Types" inverseName="pokemon" inverseEntity="Types" syncable="YES"/>
+    </entity>
+    <entity name="Stats" representedClassName="Stats" syncable="YES">
+        <attribute name="base_stat" attributeType="Integer 16" minValueString="0" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="effort" attributeType="Integer 16" minValueString="0" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="pokemon" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Pokemon" inverseName="stats" inverseEntity="Pokemon" syncable="YES"/>
+    </entity>
+    <entity name="Types" representedClassName="Types" syncable="YES">
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="slot" attributeType="Integer 16" minValueString="0" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="pokemon" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Pokemon" inverseName="types" inverseEntity="Pokemon" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Abilities" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="HeldItems" positionX="-54" positionY="-9" width="128" height="75"/>
+        <element name="LocationAreaEncounters" positionX="-36" positionY="9" width="128" height="75"/>
+        <element name="Moves" positionX="-18" positionY="27" width="128" height="75"/>
+        <element name="Photo" positionX="0" positionY="45" width="128" height="90"/>
+        <element name="Pokemon" positionX="18" positionY="63" width="128" height="240"/>
+        <element name="Stats" positionX="36" positionY="81" width="128" height="105"/>
+        <element name="Types" positionX="-9" positionY="36" width="128" height="90"/>
+    </elements>
+</model>
