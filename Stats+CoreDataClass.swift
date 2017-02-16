@@ -2,7 +2,7 @@
 //  Stats+CoreDataClass.swift
 //  
 //
-//  Created by Nitish on 15/02/17.
+//  Created by Nitish on 16/02/17.
 //
 //
 
@@ -11,6 +11,7 @@ import CoreData
 
 @objc(Stats)
 public class Stats: NSManagedObject {
+
     
     convenience init(context: NSManagedObjectContext) {
         if let ent = NSEntityDescription.entity(forEntityName: "Stats", in: context){
@@ -22,5 +23,4 @@ public class Stats: NSManagedObject {
             fatalError("Unable to initialize stats")
         }
     }
-
 }

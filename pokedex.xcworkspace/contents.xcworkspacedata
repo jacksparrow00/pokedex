@@ -2,52 +2,52 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:pokedex/Photo+CoreDataClass.swift">
+      location = "group:HeldItems+CoreDataClass.swift">
    </FileRef>
    <FileRef
-      location = "group:pokedex/Photo+CoreDataProperties.swift">
+      location = "group:HeldItems+CoreDataProperties.swift">
    </FileRef>
    <FileRef
-      location = "group:pokedex/Types+CoreDataClass.swift">
+      location = "group:Abilities+CoreDataClass.swift">
    </FileRef>
    <FileRef
-      location = "group:pokedex/Types+CoreDataProperties.swift">
+      location = "group:Abilities+CoreDataProperties.swift">
    </FileRef>
    <FileRef
-      location = "group:pokedex/LocationAreaEncounters+CoreDataClass.swift">
+      location = "group:Moves+CoreDataClass.swift">
    </FileRef>
    <FileRef
-      location = "group:pokedex/LocationAreaEncounters+CoreDataProperties.swift">
+      location = "group:Moves+CoreDataProperties.swift">
    </FileRef>
    <FileRef
-      location = "group:pokedex/Moves+CoreDataClass.swift">
+      location = "group:Pokemon+CoreDataClass.swift">
    </FileRef>
    <FileRef
-      location = "group:pokedex/Moves+CoreDataProperties.swift">
+      location = "group:Pokemon+CoreDataProperties.swift">
    </FileRef>
    <FileRef
-      location = "group:pokedex/Abilities+CoreDataClass.swift">
+      location = "group:LocationAreaEncounters+CoreDataClass.swift">
    </FileRef>
    <FileRef
-      location = "group:pokedex/Abilities+CoreDataProperties.swift">
+      location = "group:LocationAreaEncounters+CoreDataProperties.swift">
    </FileRef>
    <FileRef
-      location = "group:pokedex/HeldItems+CoreDataClass.swift">
+      location = "group:Stats+CoreDataClass.swift">
    </FileRef>
    <FileRef
-      location = "group:pokedex/HeldItems+CoreDataProperties.swift">
+      location = "group:Stats+CoreDataProperties.swift">
    </FileRef>
    <FileRef
-      location = "group:pokedex/Pokemon+CoreDataClass.swift">
+      location = "group:Photo+CoreDataClass.swift">
    </FileRef>
    <FileRef
-      location = "group:pokedex/Pokemon+CoreDataProperties.swift">
+      location = "group:Photo+CoreDataProperties.swift">
    </FileRef>
    <FileRef
-      location = "group:pokedex/Stats+CoreDataClass.swift">
+      location = "group:Types+CoreDataClass.swift">
    </FileRef>
    <FileRef
-      location = "group:pokedex/Stats+CoreDataProperties.swift">
+      location = "group:Types+CoreDataProperties.swift">
    </FileRef>
    <FileRef
       location = "group:pokedex.xcodeproj">

@@ -19,8 +19,8 @@
         <relationship name="pokemon" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Pokemon" inverseName="moves" inverseEntity="Pokemon" syncable="YES"/>
     </entity>
     <entity name="Photo" representedClassName="Photo" syncable="YES">
-        <attribute name="pic" attributeType="Binary" syncable="YES"/>
-        <attribute name="picUrl" attributeType="String" syncable="YES"/>
+        <attribute name="pic" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="picUrl" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="pokemon" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Pokemon" inverseName="photo" inverseEntity="Pokemon" syncable="YES"/>
     </entity>
     <entity name="Pokemon" representedClassName="Pokemon" syncable="YES">

@@ -2,7 +2,7 @@
 //  Moves+CoreDataProperties.swift
 //  
 //
-//  Created by Nitish on 15/02/17.
+//  Created by Nitish on 16/02/17.
 //
 //
 

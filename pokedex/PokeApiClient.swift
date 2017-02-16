@@ -223,7 +223,7 @@ class PokeApiClient{
             let request = URLRequest(url: imageURL!)
             let task = self.session.dataTask(with: request, completionHandler: { (picData, picResponse, picError) in
                 guard picError == nil else{
-                    completionHandlerForGetData(nil,false,"Pokemon image couldn't be downloaded. \(picError)")
+                    completionHandlerForGetData(nil,false,"Pokemon image couldn't be downloaded. \(picError?.localizedDescription)")
                     return
                 }
                 
@@ -396,6 +396,13 @@ class PokeApiClient{
                 }
                 
                 
+            }
+            
+            print("now saving all the data")
+            do{
+             try context.save()
+            }catch{
+                print("Couldn't save")
             }
             
             /*do{

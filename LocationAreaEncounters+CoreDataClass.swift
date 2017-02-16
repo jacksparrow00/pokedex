@@ -2,7 +2,7 @@
 //  LocationAreaEncounters+CoreDataClass.swift
 //  
 //
-//  Created by Nitish on 15/02/17.
+//  Created by Nitish on 16/02/17.
 //
 //
 
@@ -12,6 +12,7 @@ import CoreData
 @objc(LocationAreaEncounters)
 public class LocationAreaEncounters: NSManagedObject {
     
+    
     convenience init(context: NSManagedObjectContext) {
         if let ent = NSEntityDescription.entity(forEntityName: "LocationAreaEncounters", in: context){
             self.init(entity: ent, insertInto: context)
@@ -20,5 +21,4 @@ public class LocationAreaEncounters: NSManagedObject {
             fatalError("Unable to initialize locationAreaEncounters")
         }
     }
-
 }

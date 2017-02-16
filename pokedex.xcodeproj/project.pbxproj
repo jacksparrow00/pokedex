@@ -9,22 +9,22 @@
 /* Begin PBXBuildFile section */
 		6B0192B81E54694D00629DC4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0192B71E54694D00629DC4 /* DetailViewController.swift */; };
 		6B0192BA1E54AE8500629DC4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B0192B91E54AE8500629DC4 /* Default-568h@2x.png */; };
-		6B01931E1E54D22A00629DC4 /* Photo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B01930E1E54D22A00629DC4 /* Photo+CoreDataClass.swift */; };
-		6B01931F1E54D22A00629DC4 /* Photo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B01930F1E54D22A00629DC4 /* Photo+CoreDataProperties.swift */; };
-		6B0193201E54D22A00629DC4 /* Types+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0193101E54D22A00629DC4 /* Types+CoreDataClass.swift */; };
-		6B0193211E54D22A00629DC4 /* Types+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0193111E54D22A00629DC4 /* Types+CoreDataProperties.swift */; };
-		6B0193221E54D22A00629DC4 /* LocationAreaEncounters+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0193121E54D22A00629DC4 /* LocationAreaEncounters+CoreDataClass.swift */; };
-		6B0193231E54D22A00629DC4 /* LocationAreaEncounters+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0193131E54D22A00629DC4 /* LocationAreaEncounters+CoreDataProperties.swift */; };
-		6B0193241E54D22A00629DC4 /* Moves+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0193141E54D22A00629DC4 /* Moves+CoreDataClass.swift */; };
-		6B0193251E54D22A00629DC4 /* Moves+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0193151E54D22A00629DC4 /* Moves+CoreDataProperties.swift */; };
-		6B0193261E54D22A00629DC4 /* Abilities+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0193161E54D22A00629DC4 /* Abilities+CoreDataClass.swift */; };
-		6B0193271E54D22A00629DC4 /* Abilities+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0193171E54D22A00629DC4 /* Abilities+CoreDataProperties.swift */; };
-		6B0193281E54D22A00629DC4 /* HeldItems+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0193181E54D22A00629DC4 /* HeldItems+CoreDataClass.swift */; };
-		6B0193291E54D22A00629DC4 /* HeldItems+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0193191E54D22A00629DC4 /* HeldItems+CoreDataProperties.swift */; };
-		6B01932A1E54D22A00629DC4 /* Pokemon+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B01931A1E54D22A00629DC4 /* Pokemon+CoreDataClass.swift */; };
-		6B01932B1E54D22A00629DC4 /* Pokemon+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B01931B1E54D22A00629DC4 /* Pokemon+CoreDataProperties.swift */; };
-		6B01932C1E54D22A00629DC4 /* Stats+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B01931C1E54D22A00629DC4 /* Stats+CoreDataClass.swift */; };
-		6B01932D1E54D22A00629DC4 /* Stats+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B01931D1E54D22A00629DC4 /* Stats+CoreDataProperties.swift */; };
+		6B0193401E557F9000629DC4 /* HeldItems+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0193301E557F9000629DC4 /* HeldItems+CoreDataClass.swift */; };
+		6B0193411E557F9000629DC4 /* HeldItems+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0193311E557F9000629DC4 /* HeldItems+CoreDataProperties.swift */; };
+		6B0193421E557F9000629DC4 /* Abilities+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0193321E557F9000629DC4 /* Abilities+CoreDataClass.swift */; };
+		6B0193431E557F9000629DC4 /* Abilities+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0193331E557F9000629DC4 /* Abilities+CoreDataProperties.swift */; };
+		6B0193441E557F9000629DC4 /* Moves+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0193341E557F9000629DC4 /* Moves+CoreDataClass.swift */; };
+		6B0193451E557F9000629DC4 /* Moves+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0193351E557F9000629DC4 /* Moves+CoreDataProperties.swift */; };
+		6B0193461E557F9000629DC4 /* Pokemon+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0193361E557F9000629DC4 /* Pokemon+CoreDataClass.swift */; };
+		6B0193471E557F9000629DC4 /* Pokemon+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0193371E557F9000629DC4 /* Pokemon+CoreDataProperties.swift */; };
+		6B0193481E557F9000629DC4 /* LocationAreaEncounters+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0193381E557F9000629DC4 /* LocationAreaEncounters+CoreDataClass.swift */; };
+		6B0193491E557F9000629DC4 /* LocationAreaEncounters+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0193391E557F9000629DC4 /* LocationAreaEncounters+CoreDataProperties.swift */; };
+		6B01934A1E557F9000629DC4 /* Stats+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B01933A1E557F9000629DC4 /* Stats+CoreDataClass.swift */; };
+		6B01934B1E557F9000629DC4 /* Stats+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B01933B1E557F9000629DC4 /* Stats+CoreDataProperties.swift */; };
+		6B01934C1E557F9000629DC4 /* Photo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B01933C1E557F9000629DC4 /* Photo+CoreDataClass.swift */; };
+		6B01934D1E557F9000629DC4 /* Photo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B01933D1E557F9000629DC4 /* Photo+CoreDataProperties.swift */; };
+		6B01934E1E557F9000629DC4 /* Types+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B01933E1E557F9000629DC4 /* Types+CoreDataClass.swift */; };
+		6B01934F1E557F9000629DC4 /* Types+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B01933F1E557F9000629DC4 /* Types+CoreDataProperties.swift */; };
 		6B0572011E4A4D8B001FBBE8 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0572001E4A4D8B001FBBE8 /* CoreDataStack.swift */; };
 		6B0572031E4A5082001FBBE8 /* GCDBlackBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0572021E4A5082001FBBE8 /* GCDBlackBox.swift */; };
 		6B1298571E4DCC7E000A90AE /* Model2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6B1298551E4DCC7E000A90AE /* Model2.xcdatamodeld */; };
@@ -64,22 +64,22 @@
 		113973F91FAD02BC7835EBE7 /* Pods-pokedex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokedex.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pokedex/Pods-pokedex.debug.xcconfig"; sourceTree = "<group>"; };
 		6B0192B71E54694D00629DC4 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		6B0192B91E54AE8500629DC4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		6B01930E1E54D22A00629DC4 /* Photo+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Photo+CoreDataClass.swift"; sourceTree = "<group>"; };
-		6B01930F1E54D22A00629DC4 /* Photo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Photo+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		6B0193101E54D22A00629DC4 /* Types+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Types+CoreDataClass.swift"; sourceTree = "<group>"; };
-		6B0193111E54D22A00629DC4 /* Types+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Types+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		6B0193121E54D22A00629DC4 /* LocationAreaEncounters+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LocationAreaEncounters+CoreDataClass.swift"; sourceTree = "<group>"; };
-		6B0193131E54D22A00629DC4 /* LocationAreaEncounters+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LocationAreaEncounters+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		6B0193141E54D22A00629DC4 /* Moves+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Moves+CoreDataClass.swift"; sourceTree = "<group>"; };
-		6B0193151E54D22A00629DC4 /* Moves+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Moves+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		6B0193161E54D22A00629DC4 /* Abilities+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Abilities+CoreDataClass.swift"; sourceTree = "<group>"; };
-		6B0193171E54D22A00629DC4 /* Abilities+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Abilities+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		6B0193181E54D22A00629DC4 /* HeldItems+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HeldItems+CoreDataClass.swift"; sourceTree = "<group>"; };
-		6B0193191E54D22A00629DC4 /* HeldItems+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HeldItems+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		6B01931A1E54D22A00629DC4 /* Pokemon+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pokemon+CoreDataClass.swift"; sourceTree = "<group>"; };
-		6B01931B1E54D22A00629DC4 /* Pokemon+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pokemon+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		6B01931C1E54D22A00629DC4 /* Stats+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Stats+CoreDataClass.swift"; sourceTree = "<group>"; };
-		6B01931D1E54D22A00629DC4 /* Stats+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Stats+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6B0193301E557F9000629DC4 /* HeldItems+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "HeldItems+CoreDataClass.swift"; path = "../HeldItems+CoreDataClass.swift"; sourceTree = "<group>"; };
+		6B0193311E557F9000629DC4 /* HeldItems+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "HeldItems+CoreDataProperties.swift"; path = "../HeldItems+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6B0193321E557F9000629DC4 /* Abilities+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Abilities+CoreDataClass.swift"; path = "../Abilities+CoreDataClass.swift"; sourceTree = "<group>"; };
+		6B0193331E557F9000629DC4 /* Abilities+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Abilities+CoreDataProperties.swift"; path = "../Abilities+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6B0193341E557F9000629DC4 /* Moves+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Moves+CoreDataClass.swift"; path = "../Moves+CoreDataClass.swift"; sourceTree = "<group>"; };
+		6B0193351E557F9000629DC4 /* Moves+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Moves+CoreDataProperties.swift"; path = "../Moves+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6B0193361E557F9000629DC4 /* Pokemon+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Pokemon+CoreDataClass.swift"; path = "../Pokemon+CoreDataClass.swift"; sourceTree = "<group>"; };
+		6B0193371E557F9000629DC4 /* Pokemon+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Pokemon+CoreDataProperties.swift"; path = "../Pokemon+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6B0193381E557F9000629DC4 /* LocationAreaEncounters+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "LocationAreaEncounters+CoreDataClass.swift"; path = "../LocationAreaEncounters+CoreDataClass.swift"; sourceTree = "<group>"; };
+		6B0193391E557F9000629DC4 /* LocationAreaEncounters+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "LocationAreaEncounters+CoreDataProperties.swift"; path = "../LocationAreaEncounters+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6B01933A1E557F9000629DC4 /* Stats+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Stats+CoreDataClass.swift"; path = "../Stats+CoreDataClass.swift"; sourceTree = "<group>"; };
+		6B01933B1E557F9000629DC4 /* Stats+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Stats+CoreDataProperties.swift"; path = "../Stats+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6B01933C1E557F9000629DC4 /* Photo+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Photo+CoreDataClass.swift"; path = "../Photo+CoreDataClass.swift"; sourceTree = "<group>"; };
+		6B01933D1E557F9000629DC4 /* Photo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Photo+CoreDataProperties.swift"; path = "../Photo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6B01933E1E557F9000629DC4 /* Types+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Types+CoreDataClass.swift"; path = "../Types+CoreDataClass.swift"; sourceTree = "<group>"; };
+		6B01933F1E557F9000629DC4 /* Types+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Types+CoreDataProperties.swift"; path = "../Types+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		6B0572001E4A4D8B001FBBE8 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		6B0572021E4A5082001FBBE8 /* GCDBlackBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDBlackBox.swift; sourceTree = "<group>"; };
 		6B1298561E4DCC7E000A90AE /* Model2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model2.xcdatamodel; sourceTree = "<group>"; };
@@ -214,22 +214,22 @@
 		6B3C27991E48E509002178F8 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				6B01930E1E54D22A00629DC4 /* Photo+CoreDataClass.swift */,
-				6B01930F1E54D22A00629DC4 /* Photo+CoreDataProperties.swift */,
-				6B0193101E54D22A00629DC4 /* Types+CoreDataClass.swift */,
-				6B0193111E54D22A00629DC4 /* Types+CoreDataProperties.swift */,
-				6B0193121E54D22A00629DC4 /* LocationAreaEncounters+CoreDataClass.swift */,
-				6B0193131E54D22A00629DC4 /* LocationAreaEncounters+CoreDataProperties.swift */,
-				6B0193141E54D22A00629DC4 /* Moves+CoreDataClass.swift */,
-				6B0193151E54D22A00629DC4 /* Moves+CoreDataProperties.swift */,
-				6B0193161E54D22A00629DC4 /* Abilities+CoreDataClass.swift */,
-				6B0193171E54D22A00629DC4 /* Abilities+CoreDataProperties.swift */,
-				6B0193181E54D22A00629DC4 /* HeldItems+CoreDataClass.swift */,
-				6B0193191E54D22A00629DC4 /* HeldItems+CoreDataProperties.swift */,
-				6B01931A1E54D22A00629DC4 /* Pokemon+CoreDataClass.swift */,
-				6B01931B1E54D22A00629DC4 /* Pokemon+CoreDataProperties.swift */,
-				6B01931C1E54D22A00629DC4 /* Stats+CoreDataClass.swift */,
-				6B01931D1E54D22A00629DC4 /* Stats+CoreDataProperties.swift */,
+				6B0193301E557F9000629DC4 /* HeldItems+CoreDataClass.swift */,
+				6B0193311E557F9000629DC4 /* HeldItems+CoreDataProperties.swift */,
+				6B0193321E557F9000629DC4 /* Abilities+CoreDataClass.swift */,
+				6B0193331E557F9000629DC4 /* Abilities+CoreDataProperties.swift */,
+				6B0193341E557F9000629DC4 /* Moves+CoreDataClass.swift */,
+				6B0193351E557F9000629DC4 /* Moves+CoreDataProperties.swift */,
+				6B0193361E557F9000629DC4 /* Pokemon+CoreDataClass.swift */,
+				6B0193371E557F9000629DC4 /* Pokemon+CoreDataProperties.swift */,
+				6B0193381E557F9000629DC4 /* LocationAreaEncounters+CoreDataClass.swift */,
+				6B0193391E557F9000629DC4 /* LocationAreaEncounters+CoreDataProperties.swift */,
+				6B01933A1E557F9000629DC4 /* Stats+CoreDataClass.swift */,
+				6B01933B1E557F9000629DC4 /* Stats+CoreDataProperties.swift */,
+				6B01933C1E557F9000629DC4 /* Photo+CoreDataClass.swift */,
+				6B01933D1E557F9000629DC4 /* Photo+CoreDataProperties.swift */,
+				6B01933E1E557F9000629DC4 /* Types+CoreDataClass.swift */,
+				6B01933F1E557F9000629DC4 /* Types+CoreDataProperties.swift */,
 				6B0572001E4A4D8B001FBBE8 /* CoreDataStack.swift */,
 				6B1298551E4DCC7E000A90AE /* Model2.xcdatamodeld */,
 			);
@@ -440,33 +440,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B0193471E557F9000629DC4 /* Pokemon+CoreDataProperties.swift in Sources */,
+				6B0193491E557F9000629DC4 /* LocationAreaEncounters+CoreDataProperties.swift in Sources */,
 				6B12987C1E4F2979000A90AE /* TableViewController.swift in Sources */,
-				6B0193221E54D22A00629DC4 /* LocationAreaEncounters+CoreDataClass.swift in Sources */,
-				6B01931F1E54D22A00629DC4 /* Photo+CoreDataProperties.swift in Sources */,
+				6B01934F1E557F9000629DC4 /* Types+CoreDataProperties.swift in Sources */,
+				6B01934A1E557F9000629DC4 /* Stats+CoreDataClass.swift in Sources */,
+				6B0193461E557F9000629DC4 /* Pokemon+CoreDataClass.swift in Sources */,
 				6B3C279B1E48E58D002178F8 /* Constants.swift in Sources */,
-				6B0193241E54D22A00629DC4 /* Moves+CoreDataClass.swift in Sources */,
+				6B0193441E557F9000629DC4 /* Moves+CoreDataClass.swift in Sources */,
+				6B0193451E557F9000629DC4 /* Moves+CoreDataProperties.swift in Sources */,
 				6B1298571E4DCC7E000A90AE /* Model2.xcdatamodeld in Sources */,
 				6B0192B81E54694D00629DC4 /* DetailViewController.swift in Sources */,
 				6B0572011E4A4D8B001FBBE8 /* CoreDataStack.swift in Sources */,
-				6B0193211E54D22A00629DC4 /* Types+CoreDataProperties.swift in Sources */,
-				6B0193291E54D22A00629DC4 /* HeldItems+CoreDataProperties.swift in Sources */,
-				6B0193231E54D22A00629DC4 /* LocationAreaEncounters+CoreDataProperties.swift in Sources */,
+				6B0193481E557F9000629DC4 /* LocationAreaEncounters+CoreDataClass.swift in Sources */,
 				6B3C279D1E4905BD002178F8 /* PokeApiClient.swift in Sources */,
-				6B01931E1E54D22A00629DC4 /* Photo+CoreDataClass.swift in Sources */,
-				6B01932B1E54D22A00629DC4 /* Pokemon+CoreDataProperties.swift in Sources */,
 				6B0572031E4A5082001FBBE8 /* GCDBlackBox.swift in Sources */,
+				6B0193401E557F9000629DC4 /* HeldItems+CoreDataClass.swift in Sources */,
+				6B0193421E557F9000629DC4 /* Abilities+CoreDataClass.swift in Sources */,
 				6B18EE041E522C2C00CFD593 /* SearchViewController.swift in Sources */,
-				6B0193261E54D22A00629DC4 /* Abilities+CoreDataClass.swift in Sources */,
 				6B18EE061E523F5100CFD593 /* SearchIndex.swift in Sources */,
+				6B01934C1E557F9000629DC4 /* Photo+CoreDataClass.swift in Sources */,
+				6B01934E1E557F9000629DC4 /* Types+CoreDataClass.swift in Sources */,
+				6B0193411E557F9000629DC4 /* HeldItems+CoreDataProperties.swift in Sources */,
 				6B12987E1E4F9246000A90AE /* InfoViewController.swift in Sources */,
-				6B0193281E54D22A00629DC4 /* HeldItems+CoreDataClass.swift in Sources */,
-				6B01932A1E54D22A00629DC4 /* Pokemon+CoreDataClass.swift in Sources */,
 				6B3C276C1E48E4F8002178F8 /* AppDelegate.swift in Sources */,
-				6B0193251E54D22A00629DC4 /* Moves+CoreDataProperties.swift in Sources */,
-				6B01932C1E54D22A00629DC4 /* Stats+CoreDataClass.swift in Sources */,
-				6B01932D1E54D22A00629DC4 /* Stats+CoreDataProperties.swift in Sources */,
-				6B0193201E54D22A00629DC4 /* Types+CoreDataClass.swift in Sources */,
-				6B0193271E54D22A00629DC4 /* Abilities+CoreDataProperties.swift in Sources */,
+				6B01934B1E557F9000629DC4 /* Stats+CoreDataProperties.swift in Sources */,
+				6B01934D1E557F9000629DC4 /* Photo+CoreDataProperties.swift in Sources */,
+				6B0193431E557F9000629DC4 /* Abilities+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,7 +2,7 @@
 //  Abilities+CoreDataClass.swift
 //  
 //
-//  Created by Nitish on 15/02/17.
+//  Created by Nitish on 16/02/17.
 //
 //
 
@@ -11,6 +11,7 @@ import CoreData
 
 @objc(Abilities)
 public class Abilities: NSManagedObject {
+
     
     convenience init(context: NSManagedObjectContext) {
         if let ent = NSEntityDescription.entity(forEntityName: "Abilities", in: context){
@@ -22,5 +23,4 @@ public class Abilities: NSManagedObject {
             fatalError("Unable to initialize abilities")
         }
     }
-
 }

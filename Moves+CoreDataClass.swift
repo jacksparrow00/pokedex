@@ -2,7 +2,7 @@
 //  Moves+CoreDataClass.swift
 //  
 //
-//  Created by Nitish on 15/02/17.
+//  Created by Nitish on 16/02/17.
 //
 //
 
@@ -11,6 +11,7 @@ import CoreData
 
 @objc(Moves)
 public class Moves: NSManagedObject {
+
     
     convenience init(context: NSManagedObjectContext) {
         if let ent = NSEntityDescription.entity(forEntityName: "Moves", in: context){
@@ -20,5 +21,4 @@ public class Moves: NSManagedObject {
             fatalError("Unable to initialize moves")
         }
     }
-
 }
