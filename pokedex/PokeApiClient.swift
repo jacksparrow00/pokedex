@@ -228,6 +228,37 @@ class PokeApiClient{
                 }
                 
                 //MARK: Assign keys to core data values
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                //For some reason I am not able to assign the photo data to core data entitiy PHOTO. Please help me out here
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
                 context.perform {
                     let pokemonPhoto = Photo(context: context)
                     
