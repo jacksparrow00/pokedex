@@ -23,7 +23,7 @@ extension UIViewController{
 
 class SearchViewController: UIViewController {
     
-    var isSuccessful:Bool = true
+    var isSuccessful:Bool = false
     var textmode: Bool = false
     var pokemons = [Pokemon]()
     var selectedPokemon : Pokemon!
@@ -64,6 +64,7 @@ class SearchViewController: UIViewController {
 }
 
 
+
 extension SearchViewController:UIGestureRecognizerDelegate{
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
         return searchBar.isFirstResponder
@@ -71,6 +72,8 @@ extension SearchViewController:UIGestureRecognizerDelegate{
     
 }
 
+
+//searchBarDelegate assigned
 extension SearchViewController: UISearchBarDelegate{
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if let task = searchTask{
@@ -83,7 +86,7 @@ extension SearchViewController: UISearchBarDelegate{
             return
         }
         
-        if isSuccessful{
+        if isSuccessful == true{
             UIApplication.shared.isNetworkActivityIndicatorVisible = true
             PokeApiClient.sharedInstance().getData(text: searchText, managedContext: CoreDataStack.sharedInstance().persistentContainer.viewContext, completionHandlerForGetData: { (pokemon,response, error) in
                 guard error == nil else{
@@ -104,6 +107,12 @@ extension SearchViewController: UISearchBarDelegate{
                 
             })
         } else{
+            
+            
+            //Use FMDB framework to search:-    http://codelle.com/blog/2016/3/simple-core-data-full-text-search-with-swift-and-sqlite/
+            
+            
+            
             var localPokemon = Pokemon(context: CoreDataStack.sharedInstance().persistentContainer.viewContext)
             let index = SearchIndex()
             index.insertSearchable(object: localPokemon)
@@ -111,8 +120,9 @@ extension SearchViewController: UISearchBarDelegate{
                 try! self.pokemons = index.searchForManagedObjectsWithQuery(query: searchText, inManagedObjectContext: CoreDataStack.sharedInstance().persistentContainer.viewContext) as! [Pokemon]
             } catch{
                 print("No related pokemon found in core data")
-                isSuccessful = true
+                
             }
+            isSuccessful = true
             
         }
     }
@@ -121,6 +131,8 @@ extension SearchViewController: UISearchBarDelegate{
         searchBar.resignFirstResponder()
     }
     
+    
+    //allow particular characters in specific modes
     func searchBar(_ searchBar: UISearchBar, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
         var allowed: Bool = true
         if textmode{
@@ -150,6 +162,9 @@ extension SearchViewController: UISearchBarDelegate{
         }
     }
 }
+
+
+//
 
 extension SearchViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

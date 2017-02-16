@@ -11,8 +11,7 @@ import CoreData
 
 class PokeApiClient{
     
-    let appDelegate = AppDelegate()
-    
+    //request the pokeapi.co and recieve and parse data, save in core data
     class func sharedInstance() -> PokeApiClient{
         struct Singleton{
             static var sharedInstance = PokeApiClient()

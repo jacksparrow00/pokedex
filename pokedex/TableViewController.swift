@@ -85,6 +85,8 @@ class TableViewController: UITableViewController {              //Just like the 
     }
     
     func executeSearch(){
+        
+        //fetch
         if let fc = fetchedResultsController{
             do{
                 try fc.performFetch()
@@ -126,8 +128,21 @@ class TableViewController: UITableViewController {              //Just like the 
                 typeObject.sortDescriptors = [NSSortDescriptor(key: "name", ascending: false),
                                               NSSortDescriptor(key: "slot", ascending: true)]*/
                 
+                
+                
+                
+                
+                
                 let indexPath = tableView.indexPathForSelectedRow!
                 let pokemon = fetchedResultsController?.object(at: indexPath) as? Pokemon
+                
+                
+                
+                
+                
+                
+                
+                
                 
                 /*let predicate = NSPredicate(format: "pokemon = %@", argumentArray: [pokemon!])
                 
@@ -155,7 +170,19 @@ class TableViewController: UITableViewController {              //Just like the 
                 //MAARK: Implement last two statements
                 //infoVC.fetchedResultsController = locationObjectFc
                 
+                
+                
+                
+                
+                
                 infoVC.pokemon = pokemon
+                
+                
+                
+                
+                
+                
+                
                 
                 /*let locationObjectFc = NSFetchedResultsController(fetchRequest: locationObject, managedObjectContext: fetchedResultsController!.managedObjectContext, sectionNameKeyPath: nil, cacheName: nil)
                 

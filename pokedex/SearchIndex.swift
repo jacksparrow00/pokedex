@@ -13,6 +13,10 @@ import CoreData
 instanceOfFMDB.logsErrors = false
 print(instanceOfFMDB.logsErrors)*/
 
+
+
+//http://codelle.com/blog/2016/3/simple-core-data-full-text-search-with-swift-and-sqlite/
+
 protocol Searchable {
     var searchableStrings: [String] { get}
     

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController {      //display the remaining info
     var detail: String!
     var titleString: String!
     @IBOutlet weak var detailLabel: UILabel!

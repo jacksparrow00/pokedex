@@ -47,6 +47,9 @@ class InfoViewController: UIViewController {
         activityIndicator.stopAnimating()
     }
     
+    
+    //display all the saved info
+    
     func displayInfo(){
         pokemonName.text = pokemon.name
         pokemonImage.image = UIImage(data: (pokemon.photo?.pic)! as Data)
