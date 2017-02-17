@@ -391,7 +391,7 @@
                                 <color key="shadowColor" red="0.67120082487309651" green="0.45211999745191866" blue="0.41639988541443962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7D4-lx-0dt">
-                                <rect key="frame" x="36" y="95" width="303" height="372"/>
+                                <rect key="frame" x="36" y="95" width="303" height="572"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.15285704759999999" green="0.27842648009999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -416,7 +416,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="b0j-69-le3" secondAttribute="trailing" constant="-16" id="87C-Y8-1ut"/>
                             <constraint firstItem="bSB-qn-5Cd" firstAttribute="top" secondItem="ACs-na-kLt" secondAttribute="bottom" constant="40" id="A3o-29-NBE"/>
                             <constraint firstItem="b0j-69-le3" firstAttribute="leading" secondItem="XJd-dk-A9B" secondAttribute="leadingMargin" constant="-16" id="KT4-bI-CXi"/>
-                            <constraint firstItem="wWA-bx-rLg" firstAttribute="top" secondItem="7D4-lx-0dt" secondAttribute="bottom" constant="200" id="SzK-9p-Gqj"/>
+                            <constraint firstItem="wWA-bx-rLg" firstAttribute="top" secondItem="7D4-lx-0dt" secondAttribute="bottom" id="SzK-9p-Gqj"/>
                             <constraint firstItem="7D4-lx-0dt" firstAttribute="top" secondItem="ACs-na-kLt" secondAttribute="bottom" constant="75" id="TYd-Kd-SqH"/>
                             <constraint firstAttribute="trailingMargin" secondItem="7D4-lx-0dt" secondAttribute="trailing" constant="20" id="l1U-Zw-vkk"/>
                             <constraint firstItem="wWA-bx-rLg" firstAttribute="top" secondItem="b0j-69-le3" secondAttribute="bottom" constant="603" id="mSY-K6-xa7"/>
