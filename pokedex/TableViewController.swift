@@ -47,11 +47,11 @@ class TableViewController: UITableViewController,NSFetchedResultsControllerDeleg
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    /*override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         //let detailVC = self.storyboard?.instantiateViewController(withIdentifier: "InfoVC") as? InfoViewController
-        performSegue(withIdentifier: "InfoVC", sender: indexPath.row)
-    }
+        performSegue(withIdentifier: "SearchVC", sender: indexPath.row)
+    }*/
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let sectionData = fetchedResultsController.sections?[section] else{
@@ -62,7 +62,7 @@ class TableViewController: UITableViewController,NSFetchedResultsControllerDeleg
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        if segue.identifier == "InfoVC"{
+        if segue.identifier == "SearchVC"{
             if let infoVC = segue.destination as? InfoViewController{
                 
                 let indexPath = tableView.indexPathForSelectedRow!

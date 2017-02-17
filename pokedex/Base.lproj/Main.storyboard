@@ -110,7 +110,7 @@
                     <connections>
                         <outlet property="searchBar" destination="WPq-Kd-GgW" id="Anv-II-oSy"/>
                         <outlet property="tableView" destination="sUl-L1-heZ" id="VqK-l4-oa6"/>
-                        <segue destination="yWh-T7-2VU" kind="showDetail" identifier="InfoVC" id="NaT-4F-CvR"/>
+                        <segue destination="yWh-T7-2VU" kind="showDetail" identifier="newVC" id="sst-aU-F1r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iGc-w0-3Pd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -149,6 +149,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="yWh-T7-2VU" kind="showDetail" identifier="SearchVC" id="dF4-1r-hQU"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -157,9 +160,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Recent Searches" id="4f3-P5-Dko"/>
-                    <connections>
-                        <segue destination="yWh-T7-2VU" kind="showDetail" identifier="InfoVC" id="6r9-r6-UZN"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ld9-Ej-LFL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -474,7 +474,7 @@
         <image name="search " width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="NaT-4F-CvR"/>
+        <segue reference="sst-aU-F1r"/>
         <segue reference="ats-Rx-LiE"/>
     </inferredMetricsTieBreakers>
 </document>
