@@ -8,18 +8,6 @@
 
 import UIKit
 
-extension UIViewController{
-    func displayAlert(error: String?){      //to display all the errors in the app
-        performUIUpdatesOnMain {
-            let alertController = UIAlertController()
-            alertController.title = "Error"
-            alertController.message = error
-            let alertAction = UIAlertAction(title: "OK", style: .default)
-            alertController.addAction(alertAction)
-            self.present(alertController, animated: true, completion: nil)
-        }
-    }
-}
 
 class SearchViewController: UIViewController {
     
@@ -87,7 +75,8 @@ extension SearchViewController: UISearchBarDelegate{
         }
         
         if isSuccessful == true{
-            UIApplication.shared.isNetworkActivityIndicatorVisible = true
+            UIApplication.shared.isNetworkActivityIndicatorVisible = true                   // indicating network activity
+            
             PokeApiClient.sharedInstance().getData(text: searchText, managedContext: CoreDataStack.sharedInstance().persistentContainer.viewContext, completionHandlerForGetData: { (pokemon,response, error) in
                 guard error == nil else{
                     self.displayAlert(error: error)

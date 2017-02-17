@@ -1,14 +1,14 @@
 //
-//  Header.h
+//  pokedex-Bridging-Header.h
 //  pokedex
 //
-//  Created by Nitish on 16/02/17.
+//  Created by Nitish on 17/02/17.
 //  Copyright © 2017 Nitish. All rights reserved.
 //
 
-#ifndef Header_h
-#define Header_h
+#ifndef pokedex_Bridging_Header_h
+#define pokedex_Bridging_Header_h
 
 
-#endif /* Header_h */
+#endif /* pokedex_Bridging_Header_h */
 #import "FMDB.h"

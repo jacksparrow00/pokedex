@@ -32,6 +32,7 @@
 		6B12987E1E4F9246000A90AE /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B12987D1E4F9246000A90AE /* InfoViewController.swift */; };
 		6B18EE041E522C2C00CFD593 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B18EE031E522C2C00CFD593 /* SearchViewController.swift */; };
 		6B18EE061E523F5100CFD593 /* SearchIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B18EE051E523F5100CFD593 /* SearchIndex.swift */; };
+		6B1B762C1E56F0BB005DACBE /* displayAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B762B1E56F0BB005DACBE /* displayAlert.swift */; };
 		6B3C276C1E48E4F8002178F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3C276B1E48E4F8002178F8 /* AppDelegate.swift */; };
 		6B3C27711E48E4F8002178F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B3C276F1E48E4F8002178F8 /* Main.storyboard */; };
 		6B3C27731E48E4F8002178F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B3C27721E48E4F8002178F8 /* Assets.xcassets */; };
@@ -80,7 +81,7 @@
 		6B01933D1E557F9000629DC4 /* Photo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Photo+CoreDataProperties.swift"; path = "../Photo+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		6B01933E1E557F9000629DC4 /* Types+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Types+CoreDataClass.swift"; path = "../Types+CoreDataClass.swift"; sourceTree = "<group>"; };
 		6B01933F1E557F9000629DC4 /* Types+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Types+CoreDataProperties.swift"; path = "../Types+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		6B0193501E56255F00629DC4 /* pokedex-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pokedex-Bridging-Header.h"; sourceTree = "<group>"; };
+		6B0193511E5637FC00629DC4 /* pokedex-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pokedex-Bridging-Header.h"; sourceTree = "<group>"; };
 		6B0572001E4A4D8B001FBBE8 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		6B0572021E4A5082001FBBE8 /* GCDBlackBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDBlackBox.swift; sourceTree = "<group>"; };
 		6B1298561E4DCC7E000A90AE /* Model2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model2.xcdatamodel; sourceTree = "<group>"; };
@@ -88,6 +89,7 @@
 		6B12987D1E4F9246000A90AE /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		6B18EE031E522C2C00CFD593 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		6B18EE051E523F5100CFD593 /* SearchIndex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchIndex.swift; sourceTree = "<group>"; };
+		6B1B762B1E56F0BB005DACBE /* displayAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = displayAlert.swift; sourceTree = "<group>"; };
 		6B3C27681E48E4F8002178F8 /* pokedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pokedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B3C276B1E48E4F8002178F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B3C27701E48E4F8002178F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 			children = (
 				6B12987B1E4F2979000A90AE /* TableViewController.swift */,
 				6B18EE031E522C2C00CFD593 /* SearchViewController.swift */,
+				6B1B762B1E56F0BB005DACBE /* displayAlert.swift */,
 				6B12987D1E4F9246000A90AE /* InfoViewController.swift */,
 				6B0192B71E54694D00629DC4 /* DetailViewController.swift */,
 			);
@@ -155,7 +158,7 @@
 		6B3C275F1E48E4F8002178F8 = {
 			isa = PBXGroup;
 			children = (
-				6B0193501E56255F00629DC4 /* pokedex-Bridging-Header.h */,
+				6B0193511E5637FC00629DC4 /* pokedex-Bridging-Header.h */,
 				6B0192B91E54AE8500629DC4 /* Default-568h@2x.png */,
 				6B3C276A1E48E4F8002178F8 /* pokedex */,
 				6B3C277F1E48E4F8002178F8 /* pokedexTests */,
@@ -451,6 +454,7 @@
 				6B0193451E557F9000629DC4 /* Moves+CoreDataProperties.swift in Sources */,
 				6B1298571E4DCC7E000A90AE /* Model2.xcdatamodeld in Sources */,
 				6B0192B81E54694D00629DC4 /* DetailViewController.swift in Sources */,
+				6B1B762C1E56F0BB005DACBE /* displayAlert.swift in Sources */,
 				6B0572011E4A4D8B001FBBE8 /* CoreDataStack.swift in Sources */,
 				6B0193481E557F9000629DC4 /* LocationAreaEncounters+CoreDataClass.swift in Sources */,
 				6B3C279D1E4905BD002178F8 /* PokeApiClient.swift in Sources */,
@@ -622,7 +626,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = udacity.pokedex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Nitish/Desktop/nanodegree course/pokedex/pokedex-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/pokedex-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -638,7 +642,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = udacity.pokedex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Nitish/Desktop/nanodegree course/pokedex/pokedex-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/pokedex-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

@@ -13,12 +13,12 @@ import Foundation
 class InfoViewController: UIViewController {
 
     var pokemon: Pokemon!
-    var typeDisplay: String!
-    var abilitiesDisplay: String!
-    var heldItemsDisplay: String!
-    var locationDetails: String!
-    var movesDetail:String!
-    var statsDetail:String!
+    var typeDisplay: String = ""
+    var abilitiesDisplay: String = ""
+    var heldItemsDisplay: String = ""
+    var locationDetails: String = ""
+    var movesDetail:String = ""
+    var statsDetail:String = ""
     
     @IBOutlet weak var pokemonName: UILabel!
     @IBOutlet weak var pokemonImage: UIImageView!
@@ -29,30 +29,50 @@ class InfoViewController: UIViewController {
     @IBOutlet weak var typeLabel: UILabel!
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    /*var fetchedResultsController : NSFetchedResultsController<NSFetchRequestResult>? {
-        didSet {
-            // Whenever the frc changes, we execute the search and
-            // reload the table
-            fetchedResultsController?.delegate = self
-            executeSearch()
-        }
-    }*/
     
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        activityIndicator.startAnimating()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         displayInfo()
-        activityIndicator.stopAnimating()
     }
+    
+    @IBAction func backPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
     
     
     //display all the saved info
     
     func displayInfo(){
+        
+        
+        
+        
+        
         pokemonName.text = pokemon.name
-        pokemonImage.image = UIImage(data: (pokemon.photo?.pic)! as Data)
+        PokeApiClient.sharedInstance().downloadImage(imagePath: (pokemon.photo?.picUrl)!) { (data, error) in
+            self.activityIndicator.startAnimating()
+            guard error == nil else{
+                self.displayAlert(error: error)
+                return
+            }
+            
+            CoreDataStack.sharedInstance().persistentContainer.viewContext.perform {
+                self.pokemon.photo?.pic = data
+                performUIUpdatesOnMain {
+                    self.activityIndicator.stopAnimating()
+                    self.activityIndicator.isHidden = true
+                    self.pokemonImage.image = UIImage(data: data as! Data)
+                }
+            }
+        }
+        
+        CoreDataStack.sharedInstance().persistentContainer.viewContext.perform {
+            print("photo saved")
+            CoreDataStack.sharedInstance().saveContext()
+        }
+        //pokemonImage.image = UIImage(data: (pokemon.photo?.pic)! as Data)
         idLabel.text = String(pokemon.id)
         baseExperienceLabel.text = String(pokemon.baseExperience)
         heightLabel.text = String(pokemon.height)
@@ -60,10 +80,14 @@ class InfoViewController: UIViewController {
         
         for type in pokemon.types!{
             typeDisplay.append((type as! Types).name!)
-            typeDisplay.append("(\((type as! Types).slot),")
+            typeDisplay.append("(\((type as! Types).slot)),")
         }
         
+        typeLabel.numberOfLines = 0
+        typeLabel.lineBreakMode = .byWordWrapping
         typeLabel.text = typeDisplay
+        
+        activityIndicator.stopAnimating()
         
         for ability in pokemon.ablilities!{
             abilitiesDisplay.append((ability as! Abilities).ability_name!)
@@ -78,17 +102,17 @@ class InfoViewController: UIViewController {
 
         for heldItem in pokemon.heldItems!{
             heldItemsDisplay.append((heldItem as! HeldItems).name!)
-            heldItemsDisplay.append(", ")
+            heldItemsDisplay.append(",")
         }
         
         for location in pokemon.locationAreaEncounters!{
             locationDetails.append((location as! LocationAreaEncounters).locationName!)
-            locationDetails.append(", ")
+            locationDetails.append(",")
         }
         
         for move in pokemon.moves!{
             movesDetail.append((move as! Moves).name!)
-            movesDetail.append(", ")
+            movesDetail.append(",")
         }
         
         for stat in pokemon.stats!{
@@ -96,6 +120,7 @@ class InfoViewController: UIViewController {
             statsDetail.append(" = ")
             statsDetail.append("(\((stat as! Stats).base_stat)),")
         }
+        
     }
     
     

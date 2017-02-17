@@ -217,14 +217,14 @@ class PokeApiClient{
                 return
             }
             
-            let imageURL = URL(string: frontDefault)
+            /*let imageURL = URL(string: frontDefault)
             print(imageURL!)
             let request = URLRequest(url: imageURL!)
             let task = self.session.dataTask(with: request, completionHandler: { (picData, picResponse, picError) in
                 guard picError == nil else{
                     completionHandlerForGetData(nil,false,"Pokemon image couldn't be downloaded. \(picError?.localizedDescription)")
                     return
-                }
+                }*/
                 
                 //MARK: Assign keys to core data values
                 
@@ -261,17 +261,16 @@ class PokeApiClient{
                 context.perform {
                     let pokemonPhoto = Photo(context: context)
                     
-                    pokemonPhoto.pic = picData! as! NSData
                     pokemonPhoto.picUrl = frontDefault
                     
                     searchedPokemon.photo = pokemonPhoto
                     
-                    print("saved photo")
+                    print("saved photo url")
                 }
                 
-            })
+            /*})
             task.resume()
-            
+            */
             guard let heldItems = data?[PokeApiHeldItemsConstants.heldItems] as? [[String:AnyObject]] else{
                 print("held items key couldn't be found")
                 return
@@ -429,10 +428,9 @@ class PokeApiClient{
             }
             
             print("now saving all the data")
-            do{
-             try context.save()
-            }catch{
-                print("Couldn't save")
+            CoreDataStack.sharedInstance().persistentContainer.viewContext.perform {
+                CoreDataStack.sharedInstance().saveContext()
+                print("all data saved")
             }
             
             /*do{
@@ -447,4 +445,19 @@ class PokeApiClient{
         }
         
     }
+    
+    func downloadImage( imagePath : String, completionHandler: @escaping(_ imageData: NSData?, _ error: String?) -> Void){
+        let imageUrl = URL(string: imagePath)
+        let request = URLRequest(url: imageUrl!)
+        let task = self.session.dataTask(with: request, completionHandler: { (picData, picResponse, picError) in
+            guard picError == nil else{
+                completionHandler(nil,"Pokemon image couldn't be downloaded. \(picError?.localizedDescription)")
+                return
+            }
+            print("image downloaded")
+            completionHandler(picData as NSData?, nil)
+        })
+        task.resume()
+    }
 }
+
