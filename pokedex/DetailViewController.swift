@@ -16,11 +16,11 @@ class DetailViewController: UIViewController {      //display the remaining info
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        detailLabel.numberOfLines = 0
+        detailLabel.numberOfLines = 0               //http://stackoverflow.com/questions/990221/multiple-lines-of-text-in-uilabel
         detailLabel.lineBreakMode = .byWordWrapping
         detailLabel.text = detail
         
-        TitleLabel.numberOfLines = 0
+        TitleLabel.numberOfLines = 0                //http://stackoverflow.com/questions/990221/multiple-lines-of-text-in-uilabel
         TitleLabel.lineBreakMode = .byWordWrapping
         TitleLabel.text = titleString
     }

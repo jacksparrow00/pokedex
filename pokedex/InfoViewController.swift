@@ -83,7 +83,7 @@ class InfoViewController: UIViewController {
             typeDisplay.append("(\((type as! Types).slot)),")
         }
         
-        typeLabel.numberOfLines = 0
+        typeLabel.numberOfLines = 0                     //http://stackoverflow.com/questions/990221/multiple-lines-of-text-in-uilabel
         typeLabel.lineBreakMode = .byWordWrapping
         typeLabel.text = typeDisplay
         
